@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 
 
@@ -44,10 +45,39 @@ class _TabsWebState extends State<TabsWeb> {
           decoration: TextDecoration.underline,
           decorationThickness: 2,
           decorationColor: Colors.tealAccent)
-        : TextStyle(fontSize: 23,fontWeight: FontWeight.w700,color: Colors.black),
+        : GoogleFonts.oswald(fontSize: 23,fontWeight: FontWeight.w700,color: Colors.black),
 
         child: Text(widget.title, ),
       ),
     );
   }
 }
+
+class SansBold extends StatelessWidget {
+  final text;
+  final size;
+  const SansBold(this.text,this.size,{Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Text(text,
+      style: GoogleFonts.openSans(
+          fontSize: size,fontWeight: FontWeight.bold),
+    );
+  }
+}
+class Sans extends StatelessWidget {
+  final text;
+  final size;
+  const Sans(this.text,this.size,{Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Text(text,
+      style: GoogleFonts.openSans(
+          fontSize: size,),
+    );
+  }
+}
+
+
