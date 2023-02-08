@@ -1,6 +1,6 @@
 import 'package:farhan_ferdous/components.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+
 
 
 class LandingPageWeb extends StatefulWidget {
@@ -108,6 +108,138 @@ class _LandingPageWebState extends State<LandingPageWeb> {
                       backgroundImage: AssetImage("assets/Farhan-circle.png"),
                     ),
                   ),
+                ),
+              ],
+            ),
+          ),
+          //Second Page
+          Container(
+            height: heightDevice/1.5,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Image.asset("assets/web.png",height: heightDevice/1.7,),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    SansBold("About me", 40),
+                    SizedBox(height: 15,),
+                    Sans("Hello I'm Md Farhan Ferdous I spacialize in flutter development. ", 15),
+                    Sans("I strive to ensure astounding performance with state of ", 15),
+                    Sans("the art security for Android, Ios, Web, Mac, Linux and Windows. ", 15),
+                    SizedBox(height: 10,),
+                    Row(
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                            border: Border.all(
+                              color: Colors.tealAccent,
+                              style: BorderStyle.solid,
+                              width: 2.0
+                            ),
+                            borderRadius: BorderRadius.circular(5.0)
+
+                          ),
+                          padding: EdgeInsets.all(7.0),
+                          child: Sans("Flutter",15),
+                        ),
+                        SizedBox(width: 7,),
+                        Container(
+                          decoration: BoxDecoration(
+                              border: Border.all(
+                                  color: Colors.tealAccent,
+                                  style: BorderStyle.solid,
+                                  width: 2.0
+                              ),
+                              borderRadius: BorderRadius.circular(5.0)
+
+                          ),
+                          padding: EdgeInsets.all(7.0),
+                          child: Sans("Firebase",15),
+                        ),
+                        SizedBox(width: 7,),
+                        Container(
+                          decoration: BoxDecoration(
+                              border: Border.all(
+                                  color: Colors.tealAccent,
+                                  style: BorderStyle.solid,
+                                  width: 2.0
+                              ),
+                              borderRadius: BorderRadius.circular(5.0)
+
+                          ),
+                          padding: EdgeInsets.all(7.0),
+                          child: Sans("Android",15),
+                        ),
+                        SizedBox(width: 7,),
+                        Container(
+                          decoration: BoxDecoration(
+                              border: Border.all(
+                                  color: Colors.tealAccent,
+                                  style: BorderStyle.solid,
+                                  width: 2.0
+                              ),
+                              borderRadius: BorderRadius.circular(5.0)
+
+                          ),
+                          padding: EdgeInsets.all(7.0),
+                          child: Sans("Ios",15),
+                        ),
+                        SizedBox(width: 7,),
+                        Container(
+                          decoration: BoxDecoration(
+                              border: Border.all(
+                                  color: Colors.tealAccent,
+                                  style: BorderStyle.solid,
+                                  width: 2.0
+                              ),
+                              borderRadius: BorderRadius.circular(5.0)
+
+                          ),
+                          padding: EdgeInsets.all(7.0),
+                          child: Sans("Windows",15),
+                        ),
+                        SizedBox(width: 7,),
+                      ],
+                    )
+                  ],
+                ),
+              ],
+            ),
+          ),
+          //Third section
+          Container(
+            height: heightDevice/1.3,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                SansBold("What I do?", 40),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Card(
+                      elevation:30,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(15.0),
+                      ),
+                      shadowColor: Colors.tealAccent,
+                      child: Padding(
+                        padding: const EdgeInsets.all(15.0),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Image.asset("assets/web1.png",
+                            height: 200,
+                            width: 200,),
+                            SizedBox(height: 10,),
+                            SansBold("Web development", 15),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
               ],
             ),
