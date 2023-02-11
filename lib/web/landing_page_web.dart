@@ -1,5 +1,6 @@
 import 'package:farhan_ferdous/components.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 
 
@@ -14,6 +15,7 @@ class _LandingPageWebState extends State<LandingPageWeb> {
   @override
   Widget build(BuildContext context) {
     var heightDevice = MediaQuery.of(context).size.height;
+    var widthDevice= MediaQuery.of(context).size.width;
     return Scaffold(
       drawer: Drawer(),
       backgroundColor: Colors.white,
@@ -239,7 +241,86 @@ class _LandingPageWebState extends State<LandingPageWeb> {
                         ),
                       ),
                     ),
+                    Card(
+                      elevation:30,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(15.0),
+                      ),
+                      shadowColor: Colors.tealAccent,
+                      child: Padding(
+                        padding: const EdgeInsets.all(15.0),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Image.asset("assets/app.png",
+                              height: 200,
+                              width: 200,
+                              fit: BoxFit.contain,
+
+                            ),
+                            SizedBox(height: 10,),
+                            SansBold("App development", 15),
+                          ],
+                        ),
+                      ),
+                    ),
+                    Card(
+                      elevation:30,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(15.0),
+                      ),
+                      shadowColor: Colors.tealAccent,
+                      child: Padding(
+                        padding: const EdgeInsets.all(15.0),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Image.asset("assets/firebase.png",
+                              height: 200,
+                              width: 200,),
+                            SizedBox(height: 10,),
+                            SansBold("Back-end development", 15),
+                          ],
+                        ),
+                      ),
+                    ),
                   ],
+                ),
+              ],
+            ),
+          ),
+          //Forth section
+          Container(
+            height: heightDevice,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                SansBold("Contact me", 40),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Column(
+                      children: [
+
+                        TextForm(width: 350,heading: "First Name",hinText: "Please type your first name",),
+                        SizedBox(height: 15),
+                        TextForm(heading: "Email", width: 350, hinText: "Please enter your email address")
+                      ],
+                    ),
+                    Column(
+                      children: [
+                        TextForm(heading: "Last Name", width: 350, hinText: "Please enter your last name"),
+                        SizedBox(height: 15,),
+                        TextForm(heading:"Phone Number" , width: 350, hinText: "Please type your phone number"),
+                      ],
+                    ),
+                  ],
+                ),
+                TextForm(
+                  heading: "Message",
+                  width: widthDevice/1.5,
+                  hinText: "Please type your message",
+                  maxLine: 10,
                 ),
               ],
             ),

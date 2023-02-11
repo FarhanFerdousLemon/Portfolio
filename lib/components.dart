@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 
@@ -66,6 +67,7 @@ class SansBold extends StatelessWidget {
     );
   }
 }
+
 class Sans extends StatelessWidget {
   final text;
   final size;
@@ -79,5 +81,59 @@ class Sans extends StatelessWidget {
     );
   }
 }
+
+class TextForm extends StatelessWidget {
+  final heading;
+  final width;
+  final hintText;
+  final maxLines;
+
+
+  const TextForm({Key? key,@required this.heading,@required this.width, @required this.hintText, this.maxLines}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Sans(heading, 16.0),
+        SizedBox(height: 5,),
+        SizedBox(
+            width:width,
+            child: TextFormField(
+              // inputFormatters: [
+              //   FilteringTextInputFormatter.allow(RegExp('[a-zA-Z]'))
+              // ],
+              maxLines: maxLines== null?null: maxLines,
+              decoration: InputDecoration(
+                focusedErrorBorder: OutlineInputBorder(
+                  borderSide: BorderSide(color: Colors.red),
+                  borderRadius: BorderRadius.all(Radius.circular(10)),
+                ),
+                enabledBorder: OutlineInputBorder(
+                  borderSide: BorderSide(color: Colors.teal),
+                  borderRadius: BorderRadius.all(Radius.circular(10)),
+                ),
+                focusedBorder: OutlineInputBorder(
+                  borderSide: BorderSide(color: Colors.tealAccent),
+                  borderRadius: BorderRadius.all(Radius.circular(15)),
+                ),
+                hintText: hintText,
+                hintStyle: GoogleFonts.poppins(fontSize: 14),
+              ),
+              // validator: (text){
+              //   if(RegExp("\\bfarhan\\b",caseSensitive: false).hasMatch(text.toString())){
+              //     return "Match found";
+              //   }
+              // },
+              // autovalidateMode: AutovalidateMode.onUserInteraction,
+
+            ),
+        ),
+      ],
+    );
+  }
+}
+
 
 
