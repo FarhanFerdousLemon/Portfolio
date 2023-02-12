@@ -121,7 +121,7 @@ class _LandingPageWebState extends State<LandingPageWeb> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                Image.asset("assets/web.png",height: heightDevice/1.7,),
+                Image.asset("assets/web.png",height: widthDevice/1.9),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -221,69 +221,12 @@ class _LandingPageWebState extends State<LandingPageWeb> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    Card(
-                      elevation:30,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(15.0),
-                      ),
-                      shadowColor: Colors.tealAccent,
-                      child: Padding(
-                        padding: const EdgeInsets.all(15.0),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Image.asset("assets/web1.png",
-                            height: 200,
-                            width: 200,),
-                            SizedBox(height: 10,),
-                            SansBold("Web development", 15),
-                          ],
-                        ),
-                      ),
+                    AnimatedCardWeb(imagePath: "assets/web1.png", text: "Web development"),
+                    AnimatedCardWeb(imagePath: "assets/app.png", text: "App development",
+                    fit: BoxFit.contain,
+                      reverse: true,
                     ),
-                    Card(
-                      elevation:30,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(15.0),
-                      ),
-                      shadowColor: Colors.tealAccent,
-                      child: Padding(
-                        padding: const EdgeInsets.all(15.0),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Image.asset("assets/app.png",
-                              height: 200,
-                              width: 200,
-                              fit: BoxFit.contain,
-
-                            ),
-                            SizedBox(height: 10,),
-                            SansBold("App development", 15),
-                          ],
-                        ),
-                      ),
-                    ),
-                    Card(
-                      elevation:30,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(15.0),
-                      ),
-                      shadowColor: Colors.tealAccent,
-                      child: Padding(
-                        padding: const EdgeInsets.all(15.0),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Image.asset("assets/firebase.png",
-                              height: 200,
-                              width: 200,),
-                            SizedBox(height: 10,),
-                            SansBold("Back-end development", 15),
-                          ],
-                        ),
-                      ),
-                    ),
+                    AnimatedCardWeb(imagePath: "assets/firebase.png", text: "Back-end development"),
                   ],
                 ),
               ],
@@ -302,16 +245,16 @@ class _LandingPageWebState extends State<LandingPageWeb> {
                     Column(
                       children: [
 
-                        TextForm(width: 350,heading: "First Name",hinText: "Please type your first name",),
+                        TextForm(width: 350,heading: "First Name",hintText: "Please type your first name",),
                         SizedBox(height: 15),
-                        TextForm(heading: "Email", width: 350, hinText: "Please enter your email address")
+                        TextForm(heading: "Email", width: 350, hintText: "Please enter your email address")
                       ],
                     ),
                     Column(
                       children: [
-                        TextForm(heading: "Last Name", width: 350, hinText: "Please enter your last name"),
+                        TextForm(heading: "Last Name", width: 350, hintText: "Please enter your last name"),
                         SizedBox(height: 15,),
-                        TextForm(heading:"Phone Number" , width: 350, hinText: "Please type your phone number"),
+                        TextForm(heading:"Phone Number" , width: 350, hintText: "Please type your phone number"),
                       ],
                     ),
                   ],
@@ -319,12 +262,25 @@ class _LandingPageWebState extends State<LandingPageWeb> {
                 TextForm(
                   heading: "Message",
                   width: widthDevice/1.5,
-                  hinText: "Please type your message",
-                  maxLine: 10,
+                  hintText: "Please type your message",
+                  maxLines: 10,
+                ),
+                MaterialButton(
+                  elevation: 20.0,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10.0)
+                  ),
+                  height: 60.0,
+                  minWidth: 200.0,
+                  color: Colors.tealAccent,
+                  child: SansBold("Submit",20.0),
+                  onPressed: (){},
+
                 ),
               ],
             ),
           ),
+          SizedBox(height: 20.0,),
         ],
       ),
     );
