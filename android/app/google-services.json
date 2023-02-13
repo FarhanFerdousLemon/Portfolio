@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "679383859673",
+    "project_id": "farhan-portfolio-web",
+    "storage_bucket": "farhan-portfolio-web.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:679383859673:android:7976bb792dddc0398919c8",
+        "android_client_info": {
+          "package_name": "farhanferdous.com.farhan_ferdous"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "679383859673-j8636004kensfektjldvkjgbhhuvo6l7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvXt6xvXXfqlemmrZ9CoTyRo_siU2K_gs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "679383859673-j8636004kensfektjldvkjgbhhuvo6l7.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "679383859673-9b5668nndkludm4tn33f8uif03tut582.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "farhanferdous.com.farhanFerdous"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

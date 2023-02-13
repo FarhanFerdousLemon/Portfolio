@@ -17,7 +17,19 @@ class _LandingPageWebState extends State<LandingPageWeb> {
     var heightDevice = MediaQuery.of(context).size.height;
     var widthDevice= MediaQuery.of(context).size.width;
     return Scaffold(
-      drawer: Drawer(),
+      drawer: Drawer(
+        backgroundColor: Colors.white,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            CircleAvatar(
+              radius: 70,
+              backgroundColor: Colors.white,
+              backgroundImage: AssetImage("assets/Farhan.jpg"),
+            )
+          ],
+        ),
+      ),
       backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: Colors.white,
