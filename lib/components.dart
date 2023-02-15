@@ -46,7 +46,7 @@ class _TabsWebState extends State<TabsWeb> {
           decoration: TextDecoration.underline,
           decorationThickness: 2,
           decorationColor: Colors.tealAccent)
-        : GoogleFonts.roboto(fontSize: 23,fontWeight: FontWeight.w700,color: Colors.black),
+        : GoogleFonts.roboto(fontSize: 20.0,color: Colors.black),
 
         child: Text(widget.title, ),
       ),
