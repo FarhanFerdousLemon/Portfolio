@@ -47,29 +47,29 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyBZUzbKIfc8zp0zJ-XJnMXuRRK73QU8_xs',
-    appId: '1:679383859673:web:13318349c8442d1d8919c8',
-    messagingSenderId: '679383859673',
-    projectId: 'farhan-portfolio-web',
-    authDomain: 'farhan-portfolio-web.firebaseapp.com',
-    storageBucket: 'farhan-portfolio-web.appspot.com',
+    apiKey: 'AIzaSyCigGqKBen5MLNPSJwXmBzcuszqM23n2x4',
+    appId: '1:143165373062:web:d1a8459d595081a6a4ef07',
+    messagingSenderId: '143165373062',
+    projectId: 'farhan-web-personal-portfolio',
+    authDomain: 'farhan-web-personal-portfolio.firebaseapp.com',
+    storageBucket: 'farhan-web-personal-portfolio.appspot.com',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyBvXt6xvXXfqlemmrZ9CoTyRo_siU2K_gs',
-    appId: '1:679383859673:android:7976bb792dddc0398919c8',
-    messagingSenderId: '679383859673',
-    projectId: 'farhan-portfolio-web',
-    storageBucket: 'farhan-portfolio-web.appspot.com',
+    apiKey: 'AIzaSyBuwCaL38JjSpd-FVp7b1Vfbca2tvmSV1s',
+    appId: '1:143165373062:android:d5508f5531cfed40a4ef07',
+    messagingSenderId: '143165373062',
+    projectId: 'farhan-web-personal-portfolio',
+    storageBucket: 'farhan-web-personal-portfolio.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyBiLLXiQOomkXXBPih5zTxJjwRgb2saKuY',
-    appId: '1:679383859673:ios:8c771eac623876438919c8',
-    messagingSenderId: '679383859673',
-    projectId: 'farhan-portfolio-web',
-    storageBucket: 'farhan-portfolio-web.appspot.com',
-    iosClientId: '679383859673-9b5668nndkludm4tn33f8uif03tut582.apps.googleusercontent.com',
+    apiKey: 'AIzaSyCYSkfkr-8wBUmVsPTExP15jkqxUfEPCW4',
+    appId: '1:143165373062:ios:ea1a3194d701b11aa4ef07',
+    messagingSenderId: '143165373062',
+    projectId: 'farhan-web-personal-portfolio',
+    storageBucket: 'farhan-web-personal-portfolio.appspot.com',
+    iosClientId: '143165373062-a9muab7gke2ro84rr0tec0m4tfcfi8pt.apps.googleusercontent.com',
     iosBundleId: 'farhanferdous.com.farhanFerdous',
   );
 }

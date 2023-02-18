@@ -1,7 +1,6 @@
 import 'package:farhan_ferdous/components.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class LandingPageWeb extends StatefulWidget {
@@ -314,7 +313,23 @@ class _LandingPageWebState extends State<LandingPageWeb> {
               ],
             ),
           ),
-          //Forth section
+          Container(
+            height: heightDevice / 1.3,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                SansBold("Projects", 40),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    AnimatedCardPro(text: "Weather App"),
+                  ],
+                ),
+              ],
+            ),
+          ),
+
+          //Fifth section
           Container(
             height: heightDevice,
             child: Column(
