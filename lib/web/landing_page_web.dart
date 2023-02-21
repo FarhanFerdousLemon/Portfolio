@@ -318,15 +318,128 @@ class _LandingPageWebState extends State<LandingPageWeb> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                SansBold("Projects", 40),
+                SansBold("My Noteworthy Projects", 38),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    AnimatedCardPro(text: "Weather App"),
+                    Card(
+                      color: Color(0xffE0FFF8),
+                      elevation: 30,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(15.0),
+                        side: BorderSide(color: Colors.tealAccent),
+                      ),
+                      shadowColor: Colors.tealAccent,
+                      child: Padding(
+                        padding: const EdgeInsets.all(15.0),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            SansBold("Grocery App", 25),
+                            SizedBox(
+                              height: 20,
+                            ),
+                            Sans(
+                                "- A Ecommerce app by using Flutter,Dart & Firebase.",
+                                15),
+                            Sans("- User can buy products by using this app.",
+                                15),
+                            Sans("- User can search and order products. ", 15),
+                          ],
+                        ),
+                      ),
+                    ),
+                    Card(
+                      color: Color(0xffE0FFF8),
+                      elevation: 30,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(15.0),
+                        side: BorderSide(color: Colors.tealAccent),
+                      ),
+                      shadowColor: Colors.tealAccent,
+                      child: Padding(
+                        padding: const EdgeInsets.all(15.0),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            SansBold("Weather App", 25),
+                            SizedBox(
+                              height: 20,
+                            ),
+                            Sans(
+                                "- A simple app by using Flutter,Dart & API.       ",
+                                15),
+                            Sans("- User can see their current location.", 15),
+                            Sans("- User can search any location's weather. ",
+                                15),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Card(
+                      color: Color(0xffE0FFF8),
+                      elevation: 30,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(15.0),
+                        side: BorderSide(color: Colors.tealAccent),
+                      ),
+                      shadowColor: Colors.tealAccent,
+                      child: Padding(
+                        padding: const EdgeInsets.all(15.0),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            SansBold("News App", 25),
+                            SizedBox(
+                              height: 20,
+                            ),
+                            Sans(
+                                "- A News app created by using Flutter,Dart & API.   ",
+                                15),
+                            Sans("- User can read news from this app.", 15),
+                            Sans("- User can also search news . ", 15),
+                          ],
+                        ),
+                      ),
+                    ),
+                    Card(
+                      color: Color(0xffE0FFF8),
+                      elevation: 30,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(15.0),
+                        side: BorderSide(color: Colors.tealAccent),
+                      ),
+                      shadowColor: Colors.tealAccent,
+                      child: Padding(
+                        padding: const EdgeInsets.all(15.0),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            SansBold("Food Delivery App", 25),
+                            SizedBox(
+                              height: 20,
+                            ),
+                            Sans(
+                                "- A Food delivery app by using Flutter & Dart.  ",
+                                15),
+                            Sans("- User can buy food by using this app.", 15),
+                            Sans("- User can search and order food. ", 15),
+                          ],
+                        ),
+                      ),
+                    ),
                   ],
                 ),
               ],
             ),
+          ),
+          SizedBox(
+            height: 30,
           ),
 
           //Fifth section
