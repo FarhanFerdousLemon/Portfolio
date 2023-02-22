@@ -73,7 +73,7 @@ class _LandingPageWebState extends State<LandingPageWeb> {
             Spacer(),
             TabsWeb("Works"),
             Spacer(),
-            TabsWeb("Blog"),
+            TabsWeb("Experience"),
             Spacer(),
             TabsWeb("Abouts"),
             Spacer(),

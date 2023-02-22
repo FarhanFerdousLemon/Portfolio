@@ -34,10 +34,10 @@ class _LandingPageMobileState extends State<LandingPageMobile> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             CircleAvatar(
-              radius: 72,
+              radius: 32,
               backgroundColor: Colors.tealAccent,
               child: CircleAvatar(
-                radius: 70,
+                radius: 30,
                 backgroundColor: Colors.white,
                 backgroundImage: AssetImage("assets/Farhan.jpg"),
               ),
@@ -86,7 +86,7 @@ class _LandingPageMobileState extends State<LandingPageMobile> {
         children: [
           //First Page
           Container(
-            height: heightDevice - 56,
+            height: heightDevice - 26,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
@@ -105,13 +105,13 @@ class _LandingPageMobileState extends State<LandingPageMobile> {
                       ),
                       padding:
                           EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-                      child: SansBold("Hello I'm", 15),
+                      child: SansBold("Hello I'm", 13),
                     ),
                     SizedBox(
                       height: 15,
                     ),
-                    SansBold("Md Farhan Ferdous", 50.0),
-                    Sans("Flutter Developer", 30.0),
+                    SansBold("Md Farhan Ferdous", 20.0),
+                    Sans("Flutter Developer", 15.0),
                     SizedBox(
                       height: 15.0,
                     ),
@@ -121,7 +121,7 @@ class _LandingPageMobileState extends State<LandingPageMobile> {
                         SizedBox(
                           width: 20.0,
                         ),
-                        Sans("farhan145165@gmail.com", 15.0),
+                        Sans("farhan145165@gmail.com", 13.0),
                       ],
                     ),
                     SizedBox(height: 10.0),
@@ -131,7 +131,7 @@ class _LandingPageMobileState extends State<LandingPageMobile> {
                         SizedBox(
                           width: 20.0,
                         ),
-                        Sans("+8801952197656", 15.0),
+                        Sans("+8801952197656", 13.0),
                       ],
                     ),
                     SizedBox(height: 10.0),
@@ -141,19 +141,19 @@ class _LandingPageMobileState extends State<LandingPageMobile> {
                         SizedBox(
                           width: 20.0,
                         ),
-                        Sans("Ahmednagar, Mirpur-1, Dhaka", 15.0),
+                        Sans("Ahmednagar, Mirpur-1, Dhaka", 13.0),
                       ],
                     ),
                   ],
                 ),
                 CircleAvatar(
-                  radius: 147,
+                  radius: 37,
                   backgroundColor: Colors.tealAccent,
                   child: CircleAvatar(
-                    radius: 143,
+                    radius: 33,
                     backgroundColor: Colors.black,
                     child: CircleAvatar(
-                      radius: 140,
+                      radius: 30,
                       backgroundColor: Colors.white,
                       backgroundImage: AssetImage("assets/Farhan-circle.png"),
                     ),
@@ -174,25 +174,25 @@ class _LandingPageMobileState extends State<LandingPageMobile> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    SansBold("About me", 40),
+                    SansBold("About me", 25),
                     SizedBox(
                       height: 15,
                     ),
                     Sans(
                         "Hello I'm Md Farhan Ferdous and I enjoy creating things that live ",
-                        15),
+                        13),
                     Sans(
                         " on the internet. My interest in mobile/web development started  ",
-                        15),
+                        13),
                     Sans(
                         "in 2020, then it turns my passion into profession. I also freelance ",
-                        15),
+                        13),
                     Sans(
                         "for various clients across the world. If you've any ideas about",
-                        15),
+                        13),
                     Sans(
                         "creating a project or something, feel free to contact me! ",
-                        15),
+                        13),
                     SizedBox(
                       height: 10,
                     ),
@@ -206,7 +206,7 @@ class _LandingPageMobileState extends State<LandingPageMobile> {
                                   width: 2.0),
                               borderRadius: BorderRadius.circular(5.0)),
                           padding: EdgeInsets.all(7.0),
-                          child: Sans("Flutter", 15),
+                          child: Sans("Flutter", 13),
                         ),
                         SizedBox(
                           width: 7,
@@ -219,7 +219,7 @@ class _LandingPageMobileState extends State<LandingPageMobile> {
                                   width: 2.0),
                               borderRadius: BorderRadius.circular(5.0)),
                           padding: EdgeInsets.all(7.0),
-                          child: Sans("Dart", 15),
+                          child: Sans("Dart", 13),
                         ),
                         SizedBox(
                           width: 7,
@@ -232,7 +232,7 @@ class _LandingPageMobileState extends State<LandingPageMobile> {
                                   width: 2.0),
                               borderRadius: BorderRadius.circular(5.0)),
                           padding: EdgeInsets.all(7.0),
-                          child: Sans("Android", 15),
+                          child: Sans("Android", 13),
                         ),
                         SizedBox(
                           width: 7,
@@ -245,7 +245,7 @@ class _LandingPageMobileState extends State<LandingPageMobile> {
                                   width: 2.0),
                               borderRadius: BorderRadius.circular(5.0)),
                           padding: EdgeInsets.all(7.0),
-                          child: Sans("iOS", 15),
+                          child: Sans("iOS", 13),
                         ),
                         SizedBox(
                           width: 7,
@@ -258,7 +258,7 @@ class _LandingPageMobileState extends State<LandingPageMobile> {
                                   width: 2.0),
                               borderRadius: BorderRadius.circular(5.0)),
                           padding: EdgeInsets.all(7.0),
-                          child: Sans("Firebase", 15),
+                          child: Sans("Firebase", 13),
                         ),
                         SizedBox(
                           width: 7,
@@ -274,7 +274,7 @@ class _LandingPageMobileState extends State<LandingPageMobile> {
                                   width: 2.0),
                               borderRadius: BorderRadius.circular(5.0)),
                           padding: EdgeInsets.all(7.0),
-                          child: Sans("REST API", 15),
+                          child: Sans("REST API", 13),
                         ),
                         SizedBox(
                           width: 7,
@@ -292,7 +292,7 @@ class _LandingPageMobileState extends State<LandingPageMobile> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                SansBold("What I do?", 40),
+                SansBold("What I do?", 20),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
@@ -319,21 +319,21 @@ class _LandingPageMobileState extends State<LandingPageMobile> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                SansBold("Contact me", 40),
+                SansBold("Contact me", 20),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     Column(
                       children: [
                         TextForm(
-                          width: 350,
+                          width: 550,
                           heading: "First Name",
                           hintText: "Please type your first name",
                         ),
                         SizedBox(height: 15),
                         TextForm(
                             heading: "Email",
-                            width: 350,
+                            width: 50,
                             hintText: "Please enter your email address")
                       ],
                     ),
@@ -341,14 +341,14 @@ class _LandingPageMobileState extends State<LandingPageMobile> {
                       children: [
                         TextForm(
                             heading: "Last Name",
-                            width: 350,
+                            width: 50,
                             hintText: "Please enter your last name"),
                         SizedBox(
                           height: 15,
                         ),
                         TextForm(
                             heading: "Phone Number",
-                            width: 350,
+                            width: 50,
                             hintText: "Please type your phone number"),
                       ],
                     ),
@@ -365,9 +365,9 @@ class _LandingPageMobileState extends State<LandingPageMobile> {
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10.0)),
                   height: 60.0,
-                  minWidth: 200.0,
+                  minWidth: 20.0,
                   color: Colors.tealAccent,
-                  child: SansBold("Submit", 20.0),
+                  child: SansBold("Submit", 15.0),
                   onPressed: () {},
                 ),
               ],
