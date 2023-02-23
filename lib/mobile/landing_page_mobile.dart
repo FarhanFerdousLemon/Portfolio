@@ -29,15 +29,15 @@ class _LandingPageMobileState extends State<LandingPageMobile> {
     var widthDevice = MediaQuery.of(context).size.width;
     return Scaffold(
       drawer: Drawer(
-        backgroundColor: Colors.white,
+        backgroundColor: Color(0xff0C3A3A),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             CircleAvatar(
-              radius: 32,
+              radius: 72,
               backgroundColor: Colors.tealAccent,
               child: CircleAvatar(
-                radius: 30,
+                radius: 70,
                 backgroundColor: Colors.white,
                 backgroundImage: AssetImage("assets/Farhan.jpg"),
               ),
@@ -59,34 +59,48 @@ class _LandingPageMobileState extends State<LandingPageMobile> {
           ],
         ),
       ),
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.tealAccent.withOpacity(0.2),
       appBar: AppBar(
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.tealAccent.withOpacity(0.1),
         elevation: 0.0,
-        iconTheme: IconThemeData(size: 25.0, color: Colors.black),
+        iconTheme: IconThemeData(size: 25.0, color: Colors.white),
         title: Row(
           children: [
             Spacer(
               flex: 3,
             ),
-            TabsWeb("Home"),
+            Text(
+              "Home",
+              style: TextStyle(color: Colors.white),
+            ),
             Spacer(),
-            TabsWeb("Works"),
+            Text(
+              "Works",
+              style: TextStyle(color: Colors.white),
+            ),
             Spacer(),
-            TabsWeb("Blog"),
+            Text(
+              "Blog",
+              style: TextStyle(color: Colors.white),
+            ),
             Spacer(),
-            TabsWeb("Abouts"),
+            Text(
+              "Abouts",
+              style: TextStyle(color: Colors.white),
+            ),
             Spacer(),
-            TabsWeb("Contact"),
+            Text(
+              "Contact",
+              style: TextStyle(color: Colors.white),
+            ),
             Spacer(),
           ],
         ),
       ),
       body: ListView(
         children: [
-          //First Page
           Container(
-            height: heightDevice - 26,
+            height: heightDevice - 256,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
@@ -96,7 +110,7 @@ class _LandingPageMobileState extends State<LandingPageMobile> {
                   children: [
                     Container(
                       decoration: BoxDecoration(
-                        color: Colors.tealAccent,
+                        color: Colors.tealAccent.withOpacity(0.6),
                         borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(20),
                           topRight: Radius.circular(20),
@@ -105,55 +119,97 @@ class _LandingPageMobileState extends State<LandingPageMobile> {
                       ),
                       padding:
                           EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-                      child: SansBold("Hello I'm", 13),
+                      child: Text(
+                        "Hello I'm",
+                        style: TextStyle(fontSize: 15),
+                      ),
                     ),
                     SizedBox(
                       height: 15,
                     ),
-                    SansBold("Md Farhan Ferdous", 20.0),
-                    Sans("Flutter Developer", 15.0),
+                    Text(
+                      "Md Farhan Ferdous",
+                      style: TextStyle(
+                          fontSize: 30,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white),
+                    ),
+                    Text(
+                      "Flutter Developer",
+                      style: TextStyle(fontSize: 20, color: Colors.white),
+                    ),
                     SizedBox(
-                      height: 15.0,
+                      height: 10.0,
                     ),
                     Row(
                       children: [
-                        Icon(Icons.email),
-                        SizedBox(
-                          width: 20.0,
+                        Icon(
+                          Icons.email,
+                          color: Colors.white,
+                          size: 19,
                         ),
-                        Sans("farhan145165@gmail.com", 13.0),
+                        SizedBox(
+                          width: 8.0,
+                        ),
+                        Text("farhan145165@gmail.com",
+                            style: TextStyle(
+                              fontSize: 13.0,
+                              color: Colors.white,
+                            )),
                       ],
                     ),
-                    SizedBox(height: 10.0),
+                    SizedBox(
+                      height: 8.0,
+                    ),
                     Row(
                       children: [
-                        Icon(Icons.call),
-                        SizedBox(
-                          width: 20.0,
+                        Icon(
+                          Icons.call,
+                          color: Colors.white,
+                          size: 19,
                         ),
-                        Sans("+8801952197656", 13.0),
+                        SizedBox(
+                          width: 8.0,
+                        ),
+                        Text("+8801952197656",
+                            style: TextStyle(
+                              fontSize: 13.0,
+                              color: Colors.white,
+                            )),
                       ],
                     ),
-                    SizedBox(height: 10.0),
+                    SizedBox(
+                      height: 8.0,
+                    ),
                     Row(
                       children: [
-                        Icon(Icons.location_pin),
-                        SizedBox(
-                          width: 20.0,
+                        Icon(
+                          Icons.location_pin,
+                          color: Colors.white,
+                          size: 19,
                         ),
-                        Sans("Ahmednagar, Mirpur-1, Dhaka", 13.0),
+                        SizedBox(
+                          width: 8.0,
+                        ),
+                        Text(
+                          "Ahmednagar, Mirpur-1, Dhaka",
+                          style: TextStyle(
+                            fontSize: 13.0,
+                            color: Colors.white,
+                          ),
+                        ),
                       ],
                     ),
                   ],
                 ),
                 CircleAvatar(
-                  radius: 37,
+                  radius: 77,
                   backgroundColor: Colors.tealAccent,
                   child: CircleAvatar(
-                    radius: 33,
+                    radius: 73,
                     backgroundColor: Colors.black,
                     child: CircleAvatar(
-                      radius: 30,
+                      radius: 70,
                       backgroundColor: Colors.white,
                       backgroundImage: AssetImage("assets/Farhan-circle.png"),
                     ),
@@ -162,39 +218,78 @@ class _LandingPageMobileState extends State<LandingPageMobile> {
               ],
             ),
           ),
-          //Second Page
           Container(
-            height: heightDevice / 1.5,
+            height: heightDevice / 2.5,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                Image.asset("assets/web.png", height: widthDevice / 1.9),
+                Image.asset("assets/web.png", height: widthDevice / 2.5),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    SansBold("About me", 25),
-                    SizedBox(
-                      height: 15,
+                    Text(
+                      "About me",
+                      style: TextStyle(
+                          fontSize: 30.0,
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold),
                     ),
-                    Sans(
-                        "Hello I'm Md Farhan Ferdous and I enjoy creating things that live ",
-                        13),
-                    Sans(
-                        " on the internet. My interest in mobile/web development started  ",
-                        13),
-                    Sans(
-                        "in 2020, then it turns my passion into profession. I also freelance ",
-                        13),
-                    Sans(
-                        "for various clients across the world. If you've any ideas about",
-                        13),
-                    Sans(
-                        "creating a project or something, feel free to contact me! ",
-                        13),
                     SizedBox(
                       height: 10,
+                    ),
+                    Text(
+                      "Hello I'm Farhan Ferdous and I enjoy creating",
+                      style: TextStyle(
+                        fontSize: 13.0,
+                        color: Colors.white70,
+                      ),
+                    ),
+                    Text(
+                      "things that live on the internet. My interest",
+                      style: TextStyle(
+                        fontSize: 13.0,
+                        color: Colors.white70,
+                      ),
+                    ),
+                    Text(
+                      "in mobile/web development started in 2020,",
+                      style: TextStyle(
+                        fontSize: 13.0,
+                        color: Colors.white70,
+                      ),
+                    ),
+                    Text(
+                      "then it turns my passion into profession. I",
+                      style: TextStyle(
+                        fontSize: 13.0,
+                        color: Colors.white70,
+                      ),
+                    ),
+                    Text(
+                      "also worked for various clients across the",
+                      style: TextStyle(
+                        fontSize: 13.0,
+                        color: Colors.white70,
+                      ),
+                    ),
+                    Text(
+                      "world. If you've any ideas about creating a",
+                      style: TextStyle(
+                        fontSize: 13.0,
+                        color: Colors.white70,
+                      ),
+                    ),
+                    Text(
+                      "project or something, feel free to contact me!",
+                      style: TextStyle(
+                        fontSize: 13.0,
+                        color: Colors.white70,
+                      ),
+                    ),
+                    SizedBox(
+                      height: 8,
                     ),
                     Row(
                       children: [
@@ -205,11 +300,17 @@ class _LandingPageMobileState extends State<LandingPageMobile> {
                                   style: BorderStyle.solid,
                                   width: 2.0),
                               borderRadius: BorderRadius.circular(5.0)),
-                          padding: EdgeInsets.all(7.0),
-                          child: Sans("Flutter", 13),
+                          padding: EdgeInsets.all(3.0),
+                          child: Text(
+                            "Flutter",
+                            style: TextStyle(
+                              fontSize: 13.0,
+                              color: Colors.white,
+                            ),
+                          ),
                         ),
                         SizedBox(
-                          width: 7,
+                          width: 3,
                         ),
                         Container(
                           decoration: BoxDecoration(
@@ -218,11 +319,17 @@ class _LandingPageMobileState extends State<LandingPageMobile> {
                                   style: BorderStyle.solid,
                                   width: 2.0),
                               borderRadius: BorderRadius.circular(5.0)),
-                          padding: EdgeInsets.all(7.0),
-                          child: Sans("Dart", 13),
+                          padding: EdgeInsets.all(3.0),
+                          child: Text(
+                            "Dart",
+                            style: TextStyle(
+                              fontSize: 13.0,
+                              color: Colors.white,
+                            ),
+                          ),
                         ),
                         SizedBox(
-                          width: 7,
+                          width: 3,
                         ),
                         Container(
                           decoration: BoxDecoration(
@@ -231,11 +338,17 @@ class _LandingPageMobileState extends State<LandingPageMobile> {
                                   style: BorderStyle.solid,
                                   width: 2.0),
                               borderRadius: BorderRadius.circular(5.0)),
-                          padding: EdgeInsets.all(7.0),
-                          child: Sans("Android", 13),
+                          padding: EdgeInsets.all(3.0),
+                          child: Text(
+                            "Android",
+                            style: TextStyle(
+                              fontSize: 13.0,
+                              color: Colors.white,
+                            ),
+                          ),
                         ),
                         SizedBox(
-                          width: 7,
+                          width: 3,
                         ),
                         Container(
                           decoration: BoxDecoration(
@@ -244,11 +357,17 @@ class _LandingPageMobileState extends State<LandingPageMobile> {
                                   style: BorderStyle.solid,
                                   width: 2.0),
                               borderRadius: BorderRadius.circular(5.0)),
-                          padding: EdgeInsets.all(7.0),
-                          child: Sans("iOS", 13),
+                          padding: EdgeInsets.all(3.0),
+                          child: Text(
+                            "iOS",
+                            style: TextStyle(
+                              fontSize: 13.0,
+                              color: Colors.white,
+                            ),
+                          ),
                         ),
                         SizedBox(
-                          width: 7,
+                          width: 3,
                         ),
                         Container(
                           decoration: BoxDecoration(
@@ -257,124 +376,84 @@ class _LandingPageMobileState extends State<LandingPageMobile> {
                                   style: BorderStyle.solid,
                                   width: 2.0),
                               borderRadius: BorderRadius.circular(5.0)),
-                          padding: EdgeInsets.all(7.0),
-                          child: Sans("Firebase", 13),
-                        ),
-                        SizedBox(
-                          width: 7,
-                        ),
-                        SizedBox(
-                          width: 7,
-                        ),
-                        Container(
-                          decoration: BoxDecoration(
-                              border: Border.all(
-                                  color: Colors.tealAccent,
-                                  style: BorderStyle.solid,
-                                  width: 2.0),
-                              borderRadius: BorderRadius.circular(5.0)),
-                          padding: EdgeInsets.all(7.0),
-                          child: Sans("REST API", 13),
-                        ),
-                        SizedBox(
-                          width: 7,
+                          padding: EdgeInsets.all(3.0),
+                          child: Text(
+                            "Firebase",
+                            style: TextStyle(
+                              fontSize: 13.0,
+                              color: Colors.white,
+                            ),
+                          ),
                         ),
                       ],
-                    )
+                    ),
+                    SizedBox(
+                      height: 4,
+                    ),
+                    Container(
+                      decoration: BoxDecoration(
+                          border: Border.all(
+                              color: Colors.tealAccent,
+                              style: BorderStyle.solid,
+                              width: 2.0),
+                          borderRadius: BorderRadius.circular(5.0)),
+                      padding: EdgeInsets.all(3.0),
+                      child: Text(
+                        "REST API",
+                        style: TextStyle(
+                          fontSize: 13.0,
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
                   ],
                 ),
               ],
             ),
           ),
-          //Third section
           Container(
             height: heightDevice / 1.3,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                SansBold("What I do?", 20),
+                Text(
+                  "What I do?",
+                  style: TextStyle(
+                      fontSize: 30.0,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold),
+                ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    AnimatedCardWeb(
+                    AnimatedCardMob(
                         imagePath: "assets/flutter.png",
                         text: "Flutter development"),
-                    AnimatedCardWeb(
+                    AnimatedCardMob(
                       imagePath: "assets/android.png",
                       text: "Android/iOS development",
                       fit: BoxFit.contain,
                       reverse: true,
                     ),
-                    AnimatedCardWeb(
-                        imagePath: "assets/firebase.png",
-                        text: "Back-end development"),
                   ],
                 ),
-              ],
-            ),
-          ),
-          //Forth section
-          Container(
-            height: heightDevice,
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                SansBold("Contact me", 20),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    Column(
-                      children: [
-                        TextForm(
-                          width: 550,
-                          heading: "First Name",
-                          hintText: "Please type your first name",
-                        ),
-                        SizedBox(height: 15),
-                        TextForm(
-                            heading: "Email",
-                            width: 50,
-                            hintText: "Please enter your email address")
-                      ],
+                    AnimatedCardMob(
+                      imagePath: "assets/web1.png",
+                      text: "Web development",
+                      fit: BoxFit.contain,
+                      reverse: true,
                     ),
-                    Column(
-                      children: [
-                        TextForm(
-                            heading: "Last Name",
-                            width: 50,
-                            hintText: "Please enter your last name"),
-                        SizedBox(
-                          height: 15,
-                        ),
-                        TextForm(
-                            heading: "Phone Number",
-                            width: 50,
-                            hintText: "Please type your phone number"),
-                      ],
+                    AnimatedCardMob(
+                      imagePath: "assets/firebase.png",
+                      text: "Back-end development",
                     ),
                   ],
-                ),
-                TextForm(
-                  heading: "Message",
-                  width: widthDevice / 1.5,
-                  hintText: "Please type your message",
-                  maxLines: 10,
-                ),
-                MaterialButton(
-                  elevation: 20.0,
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10.0)),
-                  height: 60.0,
-                  minWidth: 20.0,
-                  color: Colors.tealAccent,
-                  child: SansBold("Submit", 15.0),
-                  onPressed: () {},
-                ),
+                )
               ],
             ),
-          ),
-          SizedBox(
-            height: 20.0,
           ),
         ],
       ),

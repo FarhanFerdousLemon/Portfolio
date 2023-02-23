@@ -209,3 +209,77 @@ class _AnimatedCardWebState extends State<AnimatedCardWeb>
     );
   }
 }
+
+class AnimatedCardMob extends StatefulWidget {
+  final imagePath;
+  final text;
+  final fit;
+  final reverse;
+  const AnimatedCardMob(
+      {Key? key,
+      @required this.imagePath,
+      @required this.text,
+      this.fit,
+      this.reverse})
+      : super(key: key);
+
+  @override
+  State<AnimatedCardMob> createState() => _AnimatedCardMobState();
+}
+
+class _AnimatedCardMobState extends State<AnimatedCardMob>
+    with SingleTickerProviderStateMixin {
+  late AnimationController _controller = AnimationController(
+    vsync: this,
+    duration: const Duration(seconds: 4),
+  )..repeat(reverse: true);
+  late Animation<Offset> _animation = Tween(
+    begin: widget.reverse == true ? Offset(0, 0.08) : Offset.zero,
+    end: widget.reverse == true ? Offset.zero : Offset(0, 0.08),
+  ).animate(_controller);
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return SlideTransition(
+      position: _animation,
+      child: Card(
+        elevation: 30,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(15.0),
+          side: BorderSide(color: Colors.tealAccent),
+        ),
+        shadowColor: Colors.tealAccent,
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Image.asset(
+                widget.imagePath,
+                height: 150,
+                width: 150,
+                fit: widget.fit == null ? null : widget.fit,
+              ),
+              SizedBox(
+                height: 8,
+              ),
+              Text(
+                widget.text,
+                style: TextStyle(
+                    fontSize: 15,
+                    color: Colors.black,
+                    fontWeight: FontWeight.bold),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
