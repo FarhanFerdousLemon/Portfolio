@@ -1,6 +1,8 @@
 import 'package:farhan_ferdous/components.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class LandingPageMobile extends StatefulWidget {
@@ -29,7 +31,7 @@ class _LandingPageMobileState extends State<LandingPageMobile> {
     var widthDevice = MediaQuery.of(context).size.width;
     return Scaffold(
       drawer: Drawer(
-        backgroundColor: Color(0xff0C3A3A),
+        backgroundColor: Color(0xff14332B),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -59,7 +61,7 @@ class _LandingPageMobileState extends State<LandingPageMobile> {
           ],
         ),
       ),
-      backgroundColor: Colors.tealAccent.withOpacity(0.2),
+      backgroundColor: Color(0xff14332B),
       appBar: AppBar(
         backgroundColor: Colors.tealAccent.withOpacity(0.1),
         elevation: 0.0,
@@ -70,7 +72,7 @@ class _LandingPageMobileState extends State<LandingPageMobile> {
               flex: 3,
             ),
             Text(
-              "Home",
+              "Abouts",
               style: TextStyle(color: Colors.white),
             ),
             Spacer(),
@@ -80,12 +82,7 @@ class _LandingPageMobileState extends State<LandingPageMobile> {
             ),
             Spacer(),
             Text(
-              "Blog",
-              style: TextStyle(color: Colors.white),
-            ),
-            Spacer(),
-            Text(
-              "Abouts",
+              "Experience",
               style: TextStyle(color: Colors.white),
             ),
             Spacer(),
@@ -412,7 +409,7 @@ class _LandingPageMobileState extends State<LandingPageMobile> {
             ),
           ),
           Container(
-            height: heightDevice / 1.3,
+            height: heightDevice / 1.2,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
@@ -452,6 +449,239 @@ class _LandingPageMobileState extends State<LandingPageMobile> {
                     ),
                   ],
                 )
+              ],
+            ),
+          ),
+          Container(
+            height: heightDevice / 1.3,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Text(
+                  "My Noteworthy Projects",
+                  style: TextStyle(
+                      fontSize: 30.0,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold),
+                ),
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Container(
+                      alignment: Alignment.topLeft,
+                      child: Card(
+                        color: Color(0xffE0FFF8),
+                        elevation: 30,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(15.0),
+                          side: BorderSide(color: Colors.tealAccent),
+                        ),
+                        shadowColor: Colors.tealAccent,
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                "Grocery App",
+                                style: TextStyle(
+                                    fontSize: 22.0,
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.w500),
+                              ),
+                              SizedBox(
+                                height: 8,
+                              ),
+                              Text(
+                                "- A Ecommerce app by using Flutter,Dart & Firebase.",
+                                style: TextStyle(fontSize: 15),
+                              ),
+                              SizedBox(
+                                height: 4,
+                              ),
+                              Text(
+                                "- User can buy products by using this app.",
+                                style: TextStyle(fontSize: 15),
+                              ),
+                              SizedBox(
+                                height: 4,
+                              ),
+                              Text(
+                                "- User can search and order products. ",
+                                style: TextStyle(fontSize: 15),
+                              ),
+                              SizedBox(
+                                height: 8,
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 15,
+                    ),
+                    Container(
+                      alignment: Alignment.topRight,
+                      child: Card(
+                        color: Color(0xffE0FFF8),
+                        elevation: 30,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(15.0),
+                          side: BorderSide(color: Colors.tealAccent),
+                        ),
+                        shadowColor: Colors.tealAccent,
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                "Weather App",
+                                style: TextStyle(
+                                    fontSize: 22.0,
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.w500),
+                              ),
+                              SizedBox(
+                                height: 8,
+                              ),
+                              Text(
+                                "- A simple app by using Flutter,Dart & API.       ",
+                                style: TextStyle(fontSize: 15),
+                              ),
+                              SizedBox(
+                                height: 4,
+                              ),
+                              Text(
+                                "- User can see their current location.",
+                                style: TextStyle(fontSize: 15),
+                              ),
+                              SizedBox(
+                                height: 4,
+                              ),
+                              Text(
+                                "- User can search any location's weather. ",
+                                style: TextStyle(fontSize: 15),
+                              ),
+                              SizedBox(
+                                height: 8,
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 15,
+                    ),
+                    Container(
+                      alignment: Alignment.topLeft,
+                      child: Card(
+                        color: Color(0xffE0FFF8),
+                        elevation: 30,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(15.0),
+                          side: BorderSide(color: Colors.tealAccent),
+                        ),
+                        shadowColor: Colors.tealAccent,
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                "News App",
+                                style: TextStyle(
+                                    fontSize: 22.0,
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.w500),
+                              ),
+                              SizedBox(
+                                height: 8,
+                              ),
+                              Text(
+                                "- A News app created by using Flutter,Dart & API.   ",
+                                style: TextStyle(fontSize: 15),
+                              ),
+                              SizedBox(
+                                height: 4,
+                              ),
+                              Text(
+                                "- User can read news from this app.",
+                                style: TextStyle(fontSize: 15),
+                              ),
+                              SizedBox(
+                                height: 4,
+                              ),
+                              Text(
+                                "- User can also search news . ",
+                                style: TextStyle(fontSize: 15),
+                              ),
+                              SizedBox(
+                                height: 8,
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 15,
+                    ),
+                    Container(
+                      alignment: Alignment.topRight,
+                      child: Card(
+                        color: Color(0xffE0FFF8),
+                        elevation: 30,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(15.0),
+                          side: BorderSide(color: Colors.tealAccent),
+                        ),
+                        shadowColor: Colors.tealAccent,
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                "News App",
+                                style: TextStyle(
+                                    fontSize: 22.0,
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.w500),
+                              ),
+                              SizedBox(
+                                height: 8,
+                              ),
+                              Text(
+                                "- A News app created by using Flutter,Dart & API.   ",
+                                style: TextStyle(fontSize: 15),
+                              ),
+                              SizedBox(
+                                height: 4,
+                              ),
+                              Text(
+                                "- User can read news from this app.",
+                                style: TextStyle(fontSize: 15),
+                              ),
+                              SizedBox(
+                                height: 4,
+                              ),
+                              Text(
+                                "- User can also search news . ",
+                                style: TextStyle(fontSize: 15),
+                              ),
+                              SizedBox(
+                                height: 8,
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
               ],
             ),
           ),
